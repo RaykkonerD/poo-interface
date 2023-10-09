@@ -12,7 +12,7 @@ public class InventarioTest {
 
     @Test
     void testIterator() {
-        InventarioIF inv = new Inventario();
+        Inventario inv = new Inventario();
         inv.setTamanho(10);
         assertDoesNotThrow(() -> inv.adicionarItem(new Arma("Faca", 50)));
         assertDoesNotThrow(() -> inv.adicionarItem(new Arma("Foice", 60)));
