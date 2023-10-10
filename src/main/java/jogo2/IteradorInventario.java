@@ -14,7 +14,7 @@ public class IteradorInventario implements Iterator {
 
     @Override
     public boolean hasNext(){
-        return indexCorrente < this.inventario.getTamanho();
+        return indexCorrente < this.inventario.getInventario().size();
     }
 
     @Override

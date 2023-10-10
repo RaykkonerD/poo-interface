@@ -21,7 +21,7 @@ public class Inventario implements InventarioIF {
 
     @Override
     public int getTamanho(){
-        return this.lista.size();
+        return this.tamanho;
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Inventario implements InventarioIF {
 
     @Override
     public Iterator<ItemJogo> iterator(){
-        return new IteradorInventario(new Inventario());
+        return new IteradorInventario(this);
     }
 
     @Override
